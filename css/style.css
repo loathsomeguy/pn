@@ -323,7 +323,7 @@ h6,
 }
 
 .footer .btn.btn-link:hover {
-    color: var(--light);
+    color: #f5b24c;
     letter-spacing: 1px;
     box-shadow: none;
 }
